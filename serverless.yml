@@ -49,15 +49,31 @@ package:
 functions:
   createPerson:
     handler: com.serverless.CreatePersonHandler
+    events:
+      - http:
+          path: /persons
+          method: post
 
   getPerson:
     handler: com.serverless.GetPersonHandler
+    events:
+      - http:
+          path: /persons/{id}
+          method: get
 
   listPersons:
     handler: com.serverless.ListPersonsHandler
+    events:
+      - http:
+          path: /persons
+          method: get
 
   deletePerson:
     handler: com.serverless.DeletePersonHandler
+    events:
+      - http:
+          path: /persons/{id}
+          method: delete
 
 
 # you can add CloudFormation resource templates here
