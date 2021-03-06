@@ -14,26 +14,33 @@
   </properties>
 
   <dependencies>
-    <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-lambda-java-log4j -->
+    <dependency>
+      <groupId>com.amazonaws</groupId>
+      <artifactId>aws-lambda-java-core</artifactId>
+      <version>1.2.1</version>
+    </dependency>
     <dependency>
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-lambda-java-log4j</artifactId>
       <version>1.0.1</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>2.9.10</version>
+      <version>2.12.2</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>2.9.10</version>
+      <version>2.12.2</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-annotations</artifactId>
-      <version>2.9.10</version>
+      <version>2.12.2</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb -->
     <dependency>
