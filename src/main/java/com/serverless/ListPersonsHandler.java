@@ -29,7 +29,7 @@ public class ListPersonsHandler implements RequestHandler<Map<String, Object>, A
 					.build();
 
 		} catch (Exception ex) {
-			logger.error("Error in listing persons: " + ex);
+			logger.error("Error in listing persons ", ex);
 			// send the error response back
 			Response responseBody = new Response("Error listing all persons: ", input);
 			return ApiGatewayResponse.builder()

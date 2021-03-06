@@ -34,7 +34,7 @@ public class CreatePersonHandler implements RequestHandler<Map<String, Object>, 
 					.setHeaders(Collections.singletonMap("X-Powered-By", "AWS Lambda & Serverless"))
 					.build();
 		} catch (Exception ex) {
-			logger.error("Error in saving person: " + ex);
+			logger.error("Error in saving person ", ex);
 
 			// send the error response back
 			Response responseBody = new Response("Error in saving person: ", input);

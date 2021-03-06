@@ -37,7 +37,7 @@ public class GetPersonHandler implements RequestHandler<Map<String, Object>, Api
 						.build();
 			}
 		} catch (Exception ex) {
-			logger.error("Error in retrieving person: " + ex);
+			logger.error("Error in retrieving person ", ex);
 
 			// send the error response back
 			Response responseBody = new Response("Error in retrieving person: ", input);

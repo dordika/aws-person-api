@@ -36,7 +36,7 @@ public class DeletePersonHandler implements RequestHandler<Map<String, Object>, 
 						.build();
 			}
 		} catch (Exception ex) {
-			logger.error("Error in deleting person: " + ex);
+			logger.error("Error in deleting person ", ex);
 
 			// send the error response back
 			Response responseBody = new Response("Error in deleting person: ", input);
